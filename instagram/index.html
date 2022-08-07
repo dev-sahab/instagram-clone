@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+
+    <title>Instagram</title>
+    <link rel="shortcut icon" href="./assets/img/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  </head>
+  <body>
+
+    <!-- Create instagram timeline...here.... -->
+    <!-- Start Coding... -->
+
+    <!-- Instagram Header -->
+    <div class="ins_timeline ins_header">
+      <div class="row global">
+        <div class="col-lg-4 for_header_logo">
+          <div class="logo_part">
+            <a href="#"><span></span></a>
+          </div>
+        </div>
+        <div class="col-lg-4 for_searchbar">
+          <div class="search_bar">
+            <input type="search" name="search" id="search" placeholder="Search">
+            <ion-icon name="search-outline"></ion-icon>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="icon_part">
+            <ul>
+              <li><a href="#"><svg aria-label="Home" class="_ab6-" color="#262626" fill="#262626" height="24" role="img" viewBox="0 0 24 24" width="24"><path d="M22 23h-6.001a1 1 0 01-1-1v-5.455a2.997 2.997 0 10-5.993 0V22a1 1 0 01-1 1H2a1 1 0 01-1-1V11.543a1.002 1.002 0 01.31-.724l10-9.543a1.001 1.001 0 011.38 0l10 9.543a1.002 1.002 0 01.31.724V22a1 1 0 01-1 1z"></path></svg></a></li>
+              <li><a href="#"><svg aria-label="Direct" class="_ab6-" color="#262626" fill="#262626" height="24" role="img" viewBox="0 0 24 24" width="24"><line fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2" x1="22" x2="9.218" y1="3" y2="10.083"></line><polygon fill="none" points="11.698 20.334 22 3.001 2 3.001 9.218 10.084 11.698 20.334" stroke="currentColor" stroke-linejoin="round" stroke-width="2"></polygon></svg></a></li>
+              <li><a data-bs-toggle="modal" href="#post_create_modal"><svg aria-label="New post" class="_ab6-" color="#262626" fill="#262626" height="24" role="img" viewBox="0 0 24 24" width="24"><path d="M2 12v3.45c0 2.849.698 4.005 1.606 4.944.94.909 2.098 1.608 4.946 1.608h6.896c2.848 0 4.006-.7 4.946-1.608C21.302 19.455 22 18.3 22 15.45V8.552c0-2.849-.698-4.006-1.606-4.945C19.454 2.7 18.296 2 15.448 2H8.552c-2.848 0-4.006.699-4.946 1.607C2.698 4.547 2 5.703 2 8.552z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path><line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="6.545" x2="17.455" y1="12.001" y2="12.001"></line><line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="12.003" x2="12.003" y1="6.545" y2="17.455"></line></svg></a></li>
+              <li><a href="#"><svg aria-label="Find People" class="_ab6-" color="#262626" fill="#262626" height="24" role="img" viewBox="0 0 24 24" width="24"><polygon fill="none" points="13.941 13.953 7.581 16.424 10.06 10.056 16.42 7.585 13.941 13.953" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></polygon><polygon fill-rule="evenodd" points="10.06 10.056 13.949 13.945 7.581 16.424 10.06 10.056"></polygon><circle cx="12.001" cy="12.005" fill="none" r="10.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></circle></svg></a></li>
+              <li><a href="#"><svg aria-label="Activity Feed" class="_ab6-" color="#262626" fill="#262626" height="24" role="img" viewBox="0 0 24 24" width="24"><path d="M16.792 3.904A4.989 4.989 0 0121.5 9.122c0 3.072-2.652 4.959-5.197 7.222-2.512 2.243-3.865 3.469-4.303 3.752-.477-.309-2.143-1.823-4.303-3.752C5.141 14.072 2.5 12.167 2.5 9.122a4.989 4.989 0 014.708-5.218 4.21 4.21 0 013.675 1.941c.84 1.175.98 1.763 1.12 1.763s.278-.588 1.11-1.766a4.17 4.17 0 013.679-1.938m0-2a6.04 6.04 0 00-4.797 2.127 6.052 6.052 0 00-4.787-2.127A6.985 6.985 0 00.5 9.122c0 3.61 2.55 5.827 5.015 7.97.283.246.569.494.853.747l1.027.918a44.998 44.998 0 003.518 3.018 2 2 0 002.174 0 45.263 45.263 0 003.626-3.115l.922-.824c.293-.26.59-.519.885-.774 2.334-2.025 4.98-4.32 4.98-7.94a6.985 6.985 0 00-6.708-7.218z"></path></svg></a></li>
+              <li><a href="#"><img class="rounded-circle header_img" src="./assets/img/shahab.jpg" alt=""></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- End Header Part -->
+
+    <div class="ins_body_part">
+      <div class="container ins_body">
+        <div class="row">
+          <div class="col-lg-7">
+            <div class="story_part">
+              <div class="card stroy_member">
+                <div class="card-body">
+                  <div class="story">
+                    <div class="story_img">
+                      <div class="image seen">
+                        <img class="rounded-circle" src="./assets/img/ridoy.jpg" alt="">
+                      </div>
+                    </div>
+                    <div class="user_name">
+                      <p>md_ri_doy</p>
+                    </div>
+                  </div>
+                  <div class="story">
+                    <div class="story_img">
+                      <div class="image">
+                        <img class="rounded-circle" src="./assets/img/asik.jpg" alt="">
+                      </div>
+                    </div>
+                    <div class="user_name">
+                      <p>Asik</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Post Part -->
+            <div id="instagram_all_post">
+              
+            </div>
+          </div>
+          <div class="col-lg-5 ins_right_side">
+            <div class="user_account">
+              <div class="user_details_here">
+                <img class="rounded-circle" src="./assets/img/shahab.jpg" alt="">
+                <div class="right_user_name">
+                  <h5>shahab.insta</h3>
+                  <p>Md Shahab Uddin</p>
+                </div>
+              </div>
+              <a id="switch_button" style="color:#0095F6;" href="#">Switch</a>
+            </div>
+            <div class="active_profile">
+              <p>Suggestions For You</p>
+              <a href="#" id="see_all">See All</a>
+            </div>
+            <div class="new_ins_pepole">
+              <div class="ins_new_pepole_design">
+                <img class="rounded-circle" src="./assets/img/zinnia.zinnis.1.jpg" alt="">
+                <div class="new_pepole_info">
+                  <a href="#"><p>zinnia.zinnis.1</p></a>
+                  <p id="insnew">New to Instagram</p>
+                </div>
+              </div>
+              <div class="new_pepole_follow_button">
+                <a href="#">Follow</a>
+              </div>
+            </div>
+            <div class="new_ins_pepole">
+              <div class="ins_new_pepole_design">
+                <img class="rounded-circle" src="./assets/img/mdr882384.jpg" alt="">
+                <div class="new_pepole_info">
+                  <a href="#"><p>mdr882384</p></a>
+                  <p id="insnew">New to Instagram</p>
+                </div>
+              </div>
+              <div class="new_pepole_follow_button">
+                <a href="#">Follow</a>
+              </div>
+            </div>
+            <div class="new_ins_pepole">
+              <div class="ins_new_pepole_design">
+                <img class="rounded-circle" src="./assets/img/imrank9802.jpg" alt="">
+                <div class="new_pepole_info">
+                  <a href="#"><p>imrank9802</p></a>
+                  <p id="insnew">New to Instagram</p>
+                </div>
+              </div>
+              <div class="new_pepole_follow_button">
+                <a href="#">Follow</a>
+              </div>
+            </div>
+            <div class="new_ins_pepole">
+              <div class="ins_new_pepole_design">
+                <img class="rounded-circle" src="./assets/img/aziz8.83.jpg" alt="">
+                <div class="new_pepole_info">
+                  <a href="#"><p>aziz8.83</p></a>
+                  <p id="insnew">New to Instagram</p>
+                </div>
+              </div>
+              <div class="new_pepole_follow_button">
+                <a href="#">Follow</a>
+              </div>
+            </div>
+            <div class="new_ins_pepole">
+              <div class="ins_new_pepole_design">
+                <img class="rounded-circle" src="./assets/img/rkiv.e79.jpg" alt="">
+                <div class="new_pepole_info">
+                  <a href="#"><p>rkiv.e79</p></a>
+                  <p id="insnew">New to Instagram</p>
+                </div>
+              </div>
+              <div class="new_pepole_follow_button">
+                <a href="#">Follow</a>
+              </div>
+            </div>
+            <div class="footer_right_menu">
+              <ul>
+                <li><a href="#">About . </a></li>
+                <li><a href="#">Help . </a></li>
+                <li><a href="#">Press . </a></li>
+                <li><a href="#">API . </a></li>
+                <li><a href="#">Jobs . </a></li>
+                <li><a href="#">Privacy . </a></li>
+                <li><a href="#">Terms . </a></li>
+                <li><a href="#">Locations . </a></li>
+                <li><a href="#">Language</a></li>
+              </ul>
+              <p>© 2022 INSTAGRAM FROM META</p>
+            </div>
+            <span class="spacer"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Post Create Modal -->
+
+    <div class="modal fade" id="post_create_modal">
+      <div class="modal-dialog modal-dialog-centered modal-sm">
+        <div class="modal-content">
+          <div class="modal-header modal_header">
+            <h3 class="d-block text-center mb-0">Create new post</h3>
+            <button class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <div class="create_post_body">
+              <div id="msg"></div>
+              <form id="create_ins_post">
+                <div class="my-3">
+                  <label for="">Auth Name</label>
+                  <input class="form-control" type="text" name="names" id="">
+                </div>
+                <div class="my-3">
+                  <label for="">Paragraph Text</label>
+                  <input class="form-control" type="text" name="paragraph" id="">
+                </div>
+                <div class="my-3">
+                  <label for="">Auth Image</label>
+                  <input class="form-control" type="text" name="auth_image" id="">
+                </div>
+                <div class="my-3">
+                  <label for="">Image</label>
+                  <input class="form-control" type="text" name="image" id="">
+                </div>
+                <div class="my-3">
+                  <input class="btn btn-primary w-100" type="submit" value="Add new post" id="">
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- For icons import -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
+    <!-- Popper.js first, then Bootstrap JS -->
+    <script src="./assets/bootstrap/bootstrap.min.js"></script>
+    <script src="./assets/js/function.js"></script>
+    <script src="./assets/js/app.js"></script>
+  </body>
+</html>

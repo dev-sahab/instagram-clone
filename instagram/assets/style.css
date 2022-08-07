@@ -1,0 +1,416 @@
+/* Fix value */
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+input:focus{
+    outline: none;
+}
+body{
+    background-color: #fafafa;
+    height: 100%;
+}
+
+/* Design part now... */
+
+/* Header Part */
+
+.logo_part {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    position: relative;
+    top: 4px;
+    left: -2px;
+}
+.row.global {
+    max-width: calc(935px + 40px);
+    margin: auto;
+    align-items: center;
+    padding: 11px 8px 12px 10px;
+}
+.ins_header {
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+    position: fixed;
+    left: 0;
+    right: 0;
+    width: 100%;
+    top: 0;
+    z-index: 9999;
+}
+.logo_part span {
+    width: 103px;
+    height: 29px;
+    background-position: 0 -30px;
+    display: block;
+    background-image: url(./img/ins_logo.png);
+}
+.col-lg-4.for_searchbar {
+    padding-left: 26px;
+}
+.search_bar {
+    position: relative;
+    top: 1px;
+    left: -.5px;
+}
+.search_bar input[name="search"] {
+    border: none;
+    outline: none;
+    background: #efefef;
+    border-radius: 7px;
+    height: 36px;
+    width: 95%;
+    padding-left: 43px;
+    font-weight: 300;
+}
+.search_bar input[name="search"]::placeholder{
+    color: #8e8e8e;
+}
+.search_bar ion-icon {
+    position: absolute;
+    left: 15px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    color: #4c4c4cb5;
+    font-size: 18px;
+}
+.icon_part {
+    padding-left: 41px;
+}
+.icon_part ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.icon_part ul li a .header_img {
+    width: 24.5px;
+    height: 24.0px;
+    object-fit: contain;
+    margin-top: 0px;
+}
+
+/* End Header Part.... */
+
+/* Body Part with side bar */
+
+.ins_body_part {
+    padding-top: 60px;
+}
+.container.ins_body {
+    max-width: calc(935px + 40px);
+    padding: 26px 77px;
+}
+
+/* Storey */
+
+.card.stroy_member {
+    border-radius: 8px;
+    /* display: none; */
+}
+.stroy_member .card-body {
+    padding: 18px 15px 11px 17px;
+}
+.story {
+    display: inline-block;
+    align-items: center;
+    margin-right: 10px;
+}
+.story:hover{
+    cursor: pointer;
+}
+.story .story_img .image {
+    width: 64px;
+    height: 63.8px;
+    background: linear-gradient(195deg, #d50ec8, #ffc800);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.story .story_img .image.seen {
+    background: #dfdfdf !important;
+}
+.story .story_img .image img {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    padding: 2px;
+}
+.user_name p {
+    text-align: center;
+    color: #000;
+    font-size: 13px;
+    text-transform: lowercase;
+    margin: 0;
+    padding-top: 6px;
+}
+
+/* Post Content */
+
+.ins_post_content .card-header {
+    background: #fff;
+    padding: 11px;
+    border-radius: 8px 8px 0 0;
+}
+.user_details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.user_content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.user_content img {
+    width: 32px;
+    object-fit: cover;
+    height: 32px;
+}
+.user_content p {
+    font-weight: 500;
+    color: #262626;
+    font-size: 14px;
+}
+.edit_delete a#drop {
+    border-radius: 50%;
+    background: transparent;
+    border: none;
+}
+.edit_delete a#drop::after{
+    display: none;
+}
+.edit_delete a#drop i {
+    color: #262626;
+}
+.dropdown-menu.show {
+    transform: translate3d(-68.5%, 36px, 0px) !important;
+}
+
+/* Post footer area design */
+
+.like_comment_area {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+.like_comment {
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.card-footer.post_cardfooter {
+    padding: 11px;
+    background: #fff;
+    border-radius: 0 0 8px 8px;
+}
+.post_cardfooter p.likes {
+    font-size: 14px;
+    font-weight: 600;
+    color: #262626;
+    margin-bottom: 3px;
+}
+p.autoname_andtext {
+    margin-bottom: 3px;
+    font-size: 14px;
+    color: #3e3e3e;
+    font-weight: 400;
+}
+p.comments {
+    color: #8E8E8E;
+    font-size: 14px;
+    margin-bottom: 3px;
+}
+p.timer {
+    font-size: 10px;
+    color: #8E8E8E;
+    font-weight: 500;
+    margin-bottom: 0px;
+}
+hr.card_footer_hr {
+    margin: 9px 0 14px 0;
+    opacity: .14;
+}
+.footer_bottom {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    align-items: center;
+}
+input[type="text"][name="comment"] {
+    border: none;
+    outline: none;
+    width: 100%;
+}
+input[type="text"][name="comment"]::placeholder {
+    color: #8E8E8E;
+}
+button.add_commentpost {
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #0095f685;
+    font-weight: 600;
+}
+
+/* End left sidebar */
+
+/* Right sidebar design... */
+
+.user_account {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.user_details_here {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+.user_details_here img.rounded-circle {
+    width: 56px;
+    height: auto;
+}
+.ins_right_side {
+    padding: 11px 21px;
+}
+.right_user_name {
+    position: relative;
+    top: 2px;
+}
+.right_user_name h5 {
+    font-size: 14px;
+    margin-bottom: 0px;
+}
+.right_user_name p {
+    color: #8E8E8E;
+    text-transform: capitalize;
+    font-size: 14px;
+    margin: 0;
+}
+a#switch_button {
+    font-size: 12px;
+    font-weight: 500;
+    position: relative;
+    right: -9px;
+    top: 1px;
+}
+/*  */
+.active_profile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 0 11px 0;
+}
+.active_profile p {
+    margin: 0;
+    color: #8E8E8E;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+a#see_all {
+    font-size: 12px;
+    color: black;
+    font-weight: 500;
+    position: relative;
+    right: -9px;
+}
+/*  */
+.new_ins_pepole {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 9px;
+}
+.ins_new_pepole_design {
+    align-items: center;
+    display: flex;
+    gap: 12px;
+    padding-left: 4px;
+}
+.ins_new_pepole_design img.rounded-circle {
+    width: 32px;
+}
+.new_pepole_info a {
+    color: black;
+}
+.new_pepole_info p {
+    margin: 0;
+}
+.new_pepole_info a p {
+    font-weight: 500;
+    font-size: 14px;
+}
+p#insnew {
+    color: #8E8E8E;
+    font-size: 12px;
+}
+.new_pepole_follow_button a {
+    font-size: 12px;
+    font-weight: 500;
+    position: relative;
+    left: -7px;
+}
+/*  */
+.footer_right_menu ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2px;
+    justify-content: start;
+    padding: 20px 0;
+}
+.footer_right_menu ul li {
+    line-height: 15px;
+}
+.footer_right_menu ul li a {
+    color: #C7C7C7;
+    font-size: 12px;
+    text-transform: capitalize;
+}
+.footer_right_menu p {
+    color: #C7C7C7;
+    font-size: 12px;
+    font-weight: 400;
+}
+/* For spacer */
+span.spacer {
+    margin-bottom: 250px;
+    width: 10px;
+    height: 10px;
+    background: transparent;
+    display: inline-block;
+}
+/*  */
+/* Modal Desian */
+.modal_header {
+    position: relative;
+    justify-content: center;
+}
+.modal_header h3 {
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+}
+.modal_header button {
+    position: absolute;
+    right: 20px;
+    top: 0;
+    bottom: 0;
+    margin: auto !important;
+}
+.modal-sm {
+    max-width: 380px;
+}
